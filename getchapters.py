@@ -1,5 +1,8 @@
 '''
-This script turns an exported edl with markers from resolve into Youtube chapters. It prints them to the terminal.
+This script turns an exported edl with markers from Davinci Resolve into Youtube chapters. It prints them to the terminal.
+Tested with Davinci Resolve 17.4
+
+Usage:
 > python3 getchapters [name of edl file]
 '''
 
@@ -26,8 +29,7 @@ def printChapters():
         index += 3
         print(timecode + ' - ' + name)
 
-
-
+        
 if __name__ == '__main__':
     # arguments 
     parser = argparse.ArgumentParser()
